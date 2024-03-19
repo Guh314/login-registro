@@ -1,7 +1,3 @@
-//import { createRandomUser } from './geradorUsuario.js';
-
-import mysqldump from "mysqldump";
-
 import mysql from "mysql";
 
 const db_info = {
@@ -19,15 +15,6 @@ db.connect((err) => {
     }
 });
 
-mysqldump({
-    connection: {
-        host: "localhost",
-        user: "root",
-        password: "root",
-        database: "projeto"
-    },
-    dumpToFile: './dump.sql',
-});
 
 
 // Usar o que está comentado abaixo para criar um novo banco de dados caso um não exista e criar a tabela usuários.
@@ -56,6 +43,7 @@ mysqldump({
 //}));
 
 // Criar usuarios.
+//import { createRandomUser } from './geradorUsuario.js';
 //const q = "INSERT INTO usuarios(`nome`, `email`, `senha`, `cpf`, `numero`) VALUES (?)"
 //for (let i = 0; i < 100; i++) {
 //    let newUser = createRandomUser();
@@ -71,3 +59,16 @@ mysqldump({
 //    if (err) return err;
 //    return console.log('Connected');
 //}));
+
+
+// Comando para realizar o Dump da database.
+//import mysqldump from "mysqldump";
+//mysqldump({
+//    connection: {
+//        host: "localhost",
+//        user: "root",
+//        password: "root",
+//        database: "projeto"
+//    },
+//    dumpToFile: './dump.sql',
+//});
