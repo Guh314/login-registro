@@ -1,16 +1,12 @@
 # Pré-requisitos do projeto.
-- Nodejs
-- npm
-- git
-- tmux (opcional)
-
-## Instalação de pre-requisitos
 - [NodeJs e NPM](https://nodejs.org/en/download/current)
 - [Git](https://git-scm.com/downloads)
-- [tmux](https://github.com/tmux/tmux/wiki)
+- [tmux](https://github.com/tmux/tmux/wiki) (opcional)
 
 # Baixar o projeto.
-Para baixar o projeto utilize o comando: `git clone https://github.com/Guh314/<project_name>`
+Para baixar o projeto utilize um dos comandos:
+1. `git clone https://github.com/Guh314/login-registro.git` | para Https.
+2. `git@github.com:Guh314/login-registro.git` | para SSH
 
 # Como rodar o projeto.
 Por uma questão de divisão entre frontend e backend temos que rodar ambas separadamente em terminais distintos.
@@ -28,7 +24,7 @@ Acesse o projecto em ambas.
 ## Se estiver usando tmux.
 Acesse a tela do projeto pelo terminal.
 Use o comando `tmux split-window` para separar a janela em duas telas e siga cada instrução em uma tela separada.
-Use o comando `c-b <arrow_key>` para alternar entre as telas. (`c-b` nesse caso significa segure Ctrl e aperte a tecla b)
+Use o comando `c-b <arrow_key>` para alternar entre as telas. (`c-b` nesse caso significa segure Ctrl e aperte a tecla b).
 
 - Em um primeiro uso tanto para o frontend como para o backend use: `npm install` ou `npm install && npm start` se quiser instalar e iniciar a usar em um comando apenas, o comando de install só é necessario em um primeiro uso.
 
